@@ -40,11 +40,16 @@ body main #stand h1 {
   body main #stand h2 {
     position: absolute;
     top: 50%;
-    left: -10%;
     font-size: 0.8em;
     background-color: #8d6464;
     border-radius: 2em;
     padding: 1% 2%;
+  }
+  body main #stand .youTag {
+    left: -10%;
+  }
+  body main #stand .pcTag {
+    right: -10%;
   }
 }
 @media (min-width: 536px) {

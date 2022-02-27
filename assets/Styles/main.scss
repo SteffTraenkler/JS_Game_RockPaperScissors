@@ -38,11 +38,16 @@ body{
                 h2{
                     position: absolute;
                     top:50%;
-                    left:-10%;
                     font-size: 0.8em;
                     background-color: rgb(141, 100, 100);
                     border-radius: 2em;
                     padding: 1% 2%;
+                }
+                .youTag{
+                    left: -10%;
+                }
+                .pcTag{
+                    right: -10%;
                 }
             }
             @media (min-width: 536px){
