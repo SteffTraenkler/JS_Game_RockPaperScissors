@@ -8,7 +8,12 @@ body{
     padding: 0;
     box-sizing: border-box;
     background: linear-gradient(to bottom right, black, rgb(15, 1, 1), rgb(114, 9, 9), red ) no-repeat;
-    height: 100vh;
+    @media (min-height: 899px) {
+        height: 100vh;
+    }
+    @media (max-height:898px) {
+        height: 100%;
+    }
     display: grid;
     place-content: center;
     main{

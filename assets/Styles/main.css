@@ -7,9 +7,18 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: linear-gradient(to bottom right, black, #0f0101, #720909, red) no-repeat;
-  height: 100vh;
   display: grid;
   place-content: center;
+}
+@media (min-height: 899px) {
+  body {
+    height: 100vh;
+  }
+}
+@media (max-height: 898px) {
+  body {
+    height: 100%;
+  }
 }
 body main {
   background-color: rgba(77, 57, 57, 0.705);
