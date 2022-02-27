@@ -29,9 +29,37 @@ body{
             margin-bottom: 2%;
         }
         #stand{
+            position: relative;
             border: 2px solid darkgray;
             h1{
                 line-height: 0.3;
+            }
+            @media (max-width:535px) {
+                h2{
+                    position: absolute;
+                    top:50%;
+                    left:-10%;
+                    font-size: 0.8em;
+                    background-color: rgb(141, 100, 100);
+                    border-radius: 2em;
+                    padding: 1% 2%;
+                }
+            }
+            @media (min-width: 536px){
+                h2{
+                    position: absolute;
+                    top:3%;
+                    font-size: 0.8em;
+                    background-color: rgb(141, 100, 100);
+                    border-radius: 2em;
+                    padding: 1% 2%;
+                }
+                .youTag{
+                    left: -7%;
+                }
+                .pcTag{
+                    right: -8%;
+                }
             }
         }
         section{
@@ -53,7 +81,7 @@ body{
                     background-color: rgba(43, 39, 39, 0.698);
                     box-shadow: 2px 2px 10px rgba(43, 39, 39, 0.698);
                 }
-                .plost:hover, .rLost:hover, .sLost:hover{
+                .pLost:hover, .rLost:hover, .sLost:hover{
                     background-color: rgba(245, 52, 52, 0.698);
                     box-shadow: 2px 2px 10px rgba(245, 52, 52, 0.698);
                     transition: 1s;
@@ -76,7 +104,7 @@ body{
                 text-decoration: underline rgb(230, 100, 100);
             }
         }
-        @media (max-width:425px) {
+        @media (max-width:535px) {
             #sleepingDragon{
                 position: absolute;
                 bottom: 5%;
@@ -85,8 +113,9 @@ body{
                 img{
                     width: 100%;
                 }
-        }}
-        @media (min-width:426px) and(max-width:768px) {
+            }
+        }
+        @media (min-width:536px) and(max-width:768px) {
             #sleepingDragon{
                 position: absolute;
                 bottom: 5%;
@@ -95,18 +124,19 @@ body{
                 img{
                     width: 100%;
                 }
-        }}
-        @media (min-width:769px){
-            #sleepingDragon{
-            position: absolute;
-            bottom: 5%;
-            right: 5%;
-            max-width: 400px;
-            img{
-                width: 100%;
             }
         }
-    }
+        @media (min-width:769px){
+            #sleepingDragon{
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+                max-width: 400px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
