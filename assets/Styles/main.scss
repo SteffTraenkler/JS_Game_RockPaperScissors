@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url(../font/CinzelAndElse/Cinzel/Cinzel-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, black, rgb(15, 1, 1), rgb(114, 9, 9), red ) no-repeat;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    main{
+        background-color: rgba(77, 57, 57, 0.705);
+        padding: 5% 5%;
+        margin-left: 10%;
+        width: 50%;
+        border-radius: 2em;
+        font-family: 'Cinzel';
+        color:rgb(230, 100, 100);
+        text-shadow: 2px 2px 3px black;
+        font-size: 2em;
+        #rounds{
+            display: grid;
+            grid-template-columns: 10% 20% 10% 20%;
+            place-content: center;
+            place-items: center;
+            margin-bottom: 2%;
+        }
+        #stand{
+            height: 10%;
+            border: 2px solid darkgray;
+            h1{
+                line-height: 0.3;
+            }
+        }
+        section{
+            text-align: center;
+            div{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                div{
+                    display: block;
+                    border-radius: 40%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                #Paper, #Rock, #Scissors{
+                    cursor: pointer;
+                }
+                .pNone:hover, .rNone:hover, .sNone:hover{
+                    background-color: rgba(43, 39, 39, 0.698);
+                    box-shadow: 2px 2px 10px rgba(43, 39, 39, 0.698);
+                }
+                .plost:hover, .rLost:hover, .sLost:hover{
+                    background-color: rgba(245, 52, 52, 0.698);
+                    box-shadow: 2px 2px 10px rgba(245, 52, 52, 0.698);
+                    transition: 1s;
+                }
+                .pWin:hover, .rWin:hover, .sWin:hover{
+                    background-color: rgba(51, 209, 51, 0.698);
+                    box-shadow: 2px 2px 10px rgba(51, 209, 51, 0.698);
+                    transition: 1s;
+                }
+                .pDraw:hover, .rDraw:hover, .sDraw:hover{
+                    background-color: rgba(240, 215, 215, 0.698);
+                    box-shadow: 2px 2px 10px rgba(240, 215, 215, 0.698);
+                    transition: 1s;
+                }
+            }
+        }
+        #restart{
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline rgb(230, 100, 100);
+            }
+        }
+        #sleepingDragon{
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            max-width: 400px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

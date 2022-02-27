@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/Styles/main.css">
+</head>
+
+<body>
+    <main>
+        <section id="rounds">
+            <input type="radio" name="roundNum" id="r5" checked='checked'>
+            <label for="r5">5</label>
+            <input type="radio" name="roundNum" id="r10">
+            <label for="r10">10</label>
+            <input type="radio" name="roundNum" id="r15">
+            <label for="r15">15</label>
+            <input type="radio" name="roundNum" id="r20">
+            <label for="r20">20</label>
+        </section>
+        <section id="stand">
+            <h1><span id='user'>0</span> : <span id="pc">0</span></h1>
+        </section>
+        <section>
+            <h1 id='innerResult'>Let's Play</h1>
+            <div id="wrapper">
+                <div class='button pNone' id='Paper'>
+                    <img src="assets/img/dragon_Paper.png" alt="">
+                </div>
+                <div class='button rNone' id='Rock'>
+                    <img src="assets/img/dragon_Rock.png" alt="">
+                </div>
+                <div class='button sNone' id='Scissors'>
+                    <img src="assets/img/dragon_Scissor.png" alt="">
+                </div>
+            </div>
+            <p>MAKE YOUR MOVE</p>
+            <h5 id="restart">restart</h5>
+        </section>
+        <div id='sleepingDragon'><img src="assets/img/dragon_sleep.png" alt=""></div>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
