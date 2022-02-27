@@ -79,12 +79,36 @@ body main #restart:hover {
   -webkit-text-decoration: underline #e66464;
           text-decoration: underline #e66464;
 }
-body main #sleepingDragon {
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-  max-width: 400px;
+@media (max-width: 425px) {
+  body main #sleepingDragon {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    width: 150px;
+  }
+  body main #sleepingDragon img {
+    width: 100%;
+  }
 }
-body main #sleepingDragon img {
-  width: 100%;
+@media (min-width: 426px) and (max-width: 768px) {
+  body main #sleepingDragon {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    width: 300px;
+  }
+  body main #sleepingDragon img {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) {
+  body main #sleepingDragon {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    max-width: 400px;
+  }
+  body main #sleepingDragon img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
